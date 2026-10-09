@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Currículo // Hugo</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/paginas.css"
+    >
+
+</head>
+
+<body>
+
+<div class="noise"></div>
+<div class="cursor-glow"></div>
+
+
+<header class="nav">
+
+    <a class="brand" href="../index.html">
+        <span>H</span>UGO<span class="dot">.</span>
+    </a>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <a class="nav-status" href="contato.html">
+        <i></i>
+        ONLINE
+    </a>
+
+</header>
+
+
+<main class="page-main">
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <p class="page-label">
+                03 / CURRÍCULO
+            </p>
+
+            <h1>
+                Construindo minha<br>
+                <em>trajetória.</em>
+            </h1>
+
+            <p class="page-description">
+                Formação, conhecimentos e experiências
+                adquiridas durante minha evolução na área
+                de tecnologia.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="page-content">
+
+
+        <section class="content-block">
+
+            <span class="block-number">
+                01 / FORMAÇÃO
+            </span>
+
+            <h2>
+                Onde estou
+                <em>aprendendo.</em>
+            </h2>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+
+                    <small>
+                        CURSO TÉCNICO
+                    </small>
+
+                    <h3>
+                        Técnico em Informática
+                    </h3>
+
+                    <p>
+                        Formação envolvendo programação,
+                        banco de dados, desenvolvimento web,
+                        mobile, redes e suporte.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-block">
+
+            <span class="block-number">
+                02 / TECNOLOGIAS
+            </span>
+
+            <h2>
+                Ferramentas que fazem parte do
+                <em>processo.</em>
+            </h2>
+
+            <div class="info-grid">
+
+                <article class="info-card">
+
+                    <span>01</span>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Tkinter, Flask, SQLite,
+                        lógica e desenvolvimento de sistemas.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>02</span>
+
+                    <h3>Web</h3>
+
+                    <p>
+                        HTML, CSS e JavaScript para
+                        construção de interfaces web.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>03</span>
+
+                    <h3>Mobile</h3>
+
+                    <p>
+                        Dart e Flutter para desenvolvimento
+                        de aplicações e interfaces.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-block">
+
+            <span class="block-number">
+                03 / OBJETIVO
+            </span>
+
+            <h2>
+                O próximo
+                <em>nível.</em>
+            </h2>
+
+            <p class="highlight">
+                Continuar evoluindo como desenvolvedor
+                através de projetos cada vez mais completos.
+            </p>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<section class="back-area">
+
+    <a
+        class="btn ghost"
+        href="../index.html"
+    >
+        ← Voltar para o início
+    </a>
+
+</section>
+
+
+<footer>
+
+    <span>
+        HUGO<span class="dot">.</span>
+        // DIGITAL IDENTITY
+    </span>
+
+    <span>
+        BUILD. BREAK. LEARN. REPEAT.
+    </span>
+
+    <span>
+        © 2026
+    </span>
+
+</footer>
+
+
+<script>
+
+const glow =
+    document.querySelector(".cursor-glow");
+
+window.addEventListener(
+    "pointermove",
+    function(event) {
+
+        glow.style.transform =
+            `translate(
+                ${event.clientX - 150}px,
+                ${event.clientY - 150}px
+            )`;
+    }
+);
+
+</script>
+
+</body>
+</html>
