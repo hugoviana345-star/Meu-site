@@ -32,3 +32,228 @@ footer{border-top:1px solid var(--line);padding:25px clamp(24px,7vw,120px);displ
 .reveal,.section,.project,.skill-card,.universe-card{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.visible{opacity:1;transform:none}
 @media(max-width:900px){.nav nav{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.hero-card{height:390px}.skills-grid{grid-template-columns:1fr 1fr}.skill-card:nth-child(2){border-right:0}.skill-card:nth-child(-n+2){border-bottom:1px solid var(--line)}.universe-grid{grid-template-columns:1fr 1fr}.section-head{grid-template-columns:1fr;gap:15px}.about-grid{grid-template-columns:1fr}.big-number{display:none}}
 @media(max-width:600px){.hero h1{font-size:58px}.hero-card{height:300px}.terminal{transform:rotate(0);font-size:11px}.orb{width:260px;height:260px}.skills-grid,.universe-grid{grid-template-columns:1fr}.skill-card{border-right:0!important;border-bottom:1px solid var(--line)}.skill-card:last-child{border-bottom:0}.project{grid-template-columns:35px 1fr 25px;gap:10px}.project h3{font-size:21px}.project p{font-size:12px}.quote-section{padding:120px 20px}footer{gap:12px;flex-direction:column}}
+/* ==================================================
+   PROJETOS EM DESTAQUE DA HOME
+================================================== */
+
+#projetos .project-list {
+    border-top: 1px solid var(--line);
+}
+
+
+#projetos a.project {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr
+        60px;
+
+    gap: 35px;
+
+    align-items: center;
+
+    padding: 36px 0;
+
+    border-bottom: 1px solid var(--line);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        padding-left .25s ease,
+        background .25s ease;
+}
+
+
+#projetos a.project:link,
+#projetos a.project:visited,
+#projetos a.project:hover,
+#projetos a.project:active {
+    color: var(--text);
+
+    text-decoration: none;
+}
+
+
+#projetos .project-index {
+    color: #4b4e55;
+
+    font: 12px monospace;
+}
+
+
+#projetos .project h3 {
+    margin: 10px 0;
+
+    color: var(--text);
+
+    font-size: 28px;
+
+    transition: color .25s ease;
+}
+
+
+#projetos .project p {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+#projetos .project .arrow {
+    color: var(--accent);
+
+    font-size: 25px;
+
+    text-align: right;
+
+    transition:
+        transform .25s ease;
+}
+
+
+#projetos .project:hover {
+    padding-left: 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(215, 255, 69, .035),
+            transparent
+        );
+}
+
+
+#projetos .project:hover h3 {
+    color: var(--accent);
+}
+
+
+#projetos .project:hover .arrow {
+    transform:
+        translate(
+            6px,
+            -6px
+        );
+}
+
+
+/* BOTÃO VER TODOS */
+
+.projects-more {
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.projects-more .btn {
+    min-width: 230px;
+}
+
+
+@media (max-width: 600px) {
+
+    #projetos a.project {
+        grid-template-columns:
+            35px
+            1fr
+            25px;
+
+        gap: 12px;
+
+        padding:
+            28px
+            0;
+    }
+
+
+    #projetos .project h3 {
+        font-size: 21px;
+    }
+
+
+    #projetos .project p {
+        font-size: 12px;
+    }
+
+
+    #projetos .project:hover {
+        padding-left: 8px;
+    }
+
+
+    .projects-more .btn {
+        width: 100%;
+    }
+
+}
+/* ========================================
+   BOTÃO VER TODOS OS PROJETOS
+======================================== */
+
+.projects-more {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.projects-more .btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 230px;
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    border: 1px solid var(--line);
+
+    background: transparent;
+
+    color: var(--text) !important;
+
+    text-decoration: none !important;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.projects-more .btn:link,
+.projects-more .btn:visited {
+    color: var(--text) !important;
+    text-decoration: none !important;
+}
+
+.projects-more .btn:hover {
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: #08090b !important;
+
+    transform: translateY(-2px);
+}
