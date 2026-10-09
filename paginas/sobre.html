@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sobre // Hugo</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/paginas.css"
+    >
+</head>
+
+<body>
+
+<div class="noise"></div>
+<div class="cursor-glow"></div>
+
+<header class="nav">
+
+    <a class="brand" href="../index.html">
+        <span>H</span>UGO<span class="dot">.</span>
+    </a>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <a class="nav-status" href="contato.html">
+        <i></i>
+        ONLINE
+    </a>
+
+</header>
+
+
+<main class="page-main">
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <p class="page-label">
+                01 / SOBRE
+            </p>
+
+            <h1>
+                Mais do que<br>
+                <em>código.</em>
+            </h1>
+
+            <p class="page-description">
+                Tecnologia começou como curiosidade e acabou
+                se tornando uma maneira de construir ideias,
+                resolver problemas e transformar aprendizado
+                em projetos reais.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="page-content">
+
+        <section class="content-block">
+
+            <span class="block-number">
+                01 / QUEM SOU
+            </span>
+
+            <h2>
+                Curiosidade que vira
+                <em>projeto.</em>
+            </h2>
+
+            <p class="highlight">
+                Eu gosto de entender como as coisas funcionam
+                e depois tentar construir uma versão minha.
+            </p>
+
+            <p>
+                Programação entrou como uma ferramenta de
+                aprendizado e acabou se tornando uma das áreas
+                em que mais gosto de experimentar.
+            </p>
+
+            <p>
+                Já desenvolvi projetos envolvendo Python,
+                interfaces gráficas, bancos de dados,
+                aplicações web, Flutter e sistemas completos.
+            </p>
+
+        </section>
+
+
+        <section class="content-block">
+
+            <span class="block-number">
+                02 / COMO EU APRENDO
+            </span>
+
+            <h2>
+                Construir.
+                <em>Errar. Melhorar.</em>
+            </h2>
+
+            <div class="info-grid">
+
+                <article class="info-card">
+
+                    <span>01</span>
+
+                    <h3>Experimentar</h3>
+
+                    <p>
+                        Transformar ideias em pequenos projetos
+                        para entender como cada tecnologia funciona.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>02</span>
+
+                    <h3>Resolver</h3>
+
+                    <p>
+                        Encontrar erros, pesquisar soluções
+                        e entender por que determinada solução funciona.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>03</span>
+
+                    <h3>Evoluir</h3>
+
+                    <p>
+                        Voltar aos projetos antigos e implementar
+                        novas ideias conforme meu conhecimento aumenta.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-block">
+
+            <span class="block-number">
+                03 / ALÉM DA PROGRAMAÇÃO
+            </span>
+
+            <h2>
+                Um universo
+                <em>maior.</em>
+            </h2>
+
+            <p>
+                Além de tecnologia, também tenho interesse por
+                idiomas, cultura japonesa, história, psicologia,
+                filosofia, academia e diferentes áreas do conhecimento.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<section class="back-area">
+
+    <a
+        class="btn ghost"
+        href="../index.html"
+    >
+        ← Voltar para o início
+    </a>
+
+</section>
+
+
+<footer>
+
+    <span>
+        HUGO<span class="dot">.</span>
+        // DIGITAL IDENTITY
+    </span>
+
+    <span>
+        BUILD. BREAK. LEARN. REPEAT.
+    </span>
+
+    <span>
+        © 2026
+    </span>
+
+</footer>
+
+
+<script>
+
+const glow =
+    document.querySelector(".cursor-glow");
+
+window.addEventListener(
+    "pointermove",
+    function(event) {
+
+        glow.style.transform =
+            `translate(
+                ${event.clientX - 150}px,
+                ${event.clientY - 150}px
+            )`;
+    }
+);
+
+</script>
+
+</body>
+</html>
