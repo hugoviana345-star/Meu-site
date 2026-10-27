@@ -363,3 +363,812 @@
         font-size: 12px;
     }
 }
+.curriculo-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+.curriculo-btn {
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--line);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+
+.curriculo-btn:hover {
+    border-color: var(--accent);
+
+    color: var(--accent);
+
+    transform: translateY(-2px);
+}
+
+
+.curriculo-btn.primary {
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: #08090b;
+}
+
+
+.curriculo-btn.primary:hover {
+    background: transparent;
+
+    color: var(--accent);
+}
+
+
+.curriculo-tech-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    margin-top: 45px;
+
+    border:
+        1px solid
+        var(--line);
+}
+
+
+.curriculo-tech-card {
+    min-height: 230px;
+
+    padding: 30px;
+
+    border-right:
+        1px solid
+        var(--line);
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+.curriculo-tech-card:nth-child(3n) {
+    border-right: 0;
+}
+
+
+.curriculo-tech-card:nth-last-child(-n+3) {
+    border-bottom: 0;
+}
+
+
+.curriculo-tech-card:hover {
+    background: #0d0f12;
+
+    transform: translateY(-4px);
+}
+
+
+.curriculo-tech-card span {
+    color: var(--accent);
+
+    font: 10px monospace;
+}
+
+
+.curriculo-tech-card h3 {
+    margin: 50px 0 12px;
+
+    font-size: 22px;
+}
+
+
+.curriculo-tech-card p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+.curriculo-projects {
+    margin-top: 45px;
+
+    border-top:
+        1px solid
+        var(--line);
+}
+
+
+.curriculo-project {
+    display: grid;
+
+    grid-template-columns:
+        60px
+        1fr
+        40px;
+
+    gap: 25px;
+
+    align-items: center;
+
+    padding: 32px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition:
+        background .3s ease,
+        padding-left .3s ease;
+}
+
+
+.curriculo-project:hover {
+    padding-left: 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(215, 255, 69, .04),
+            transparent
+        );
+}
+
+
+.curriculo-project > span {
+    color: #55585e;
+
+    font: 10px monospace;
+}
+
+
+.curriculo-project small {
+    color: var(--accent);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+}
+
+
+.curriculo-project h3 {
+    margin: 8px 0;
+
+    font-size: 23px;
+
+    transition:
+        color .25s ease;
+}
+
+
+.curriculo-project p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+.curriculo-project strong {
+    color: var(--accent);
+
+    font-size: 22px;
+
+    text-align: right;
+
+    transition:
+        transform .25s ease;
+}
+
+
+.curriculo-project:hover h3 {
+    color: var(--accent);
+}
+
+
+.curriculo-project:hover strong {
+    transform:
+        translate(
+            5px,
+            -5px
+        );
+}
+
+
+.curriculo-download {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    border:
+        1px solid
+        var(--line);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(215, 255, 69, .04),
+            transparent
+        );
+}
+
+
+.curriculo-download small {
+    color: var(--accent);
+
+    font: 10px monospace;
+
+    letter-spacing: .12em;
+}
+
+
+.curriculo-download h2 {
+    margin: 15px 0;
+
+    font-size:
+        clamp(
+            35px,
+            5vw,
+            60px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -.04em;
+}
+
+
+.curriculo-download h2 em {
+    font-family: var(--serif);
+
+    font-weight: 400;
+}
+
+
+.curriculo-download p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+.curriculo-download-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    min-width: 210px;
+}
+
+
+@media (max-width: 900px) {
+
+    .curriculo-tech-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .curriculo-tech-card:nth-child(3n) {
+        border-right:
+            1px solid
+            var(--line);
+    }
+
+
+    .curriculo-tech-card:nth-child(2n) {
+        border-right: 0;
+    }
+
+
+    .curriculo-tech-card:nth-last-child(-n+3) {
+        border-bottom:
+            1px solid
+            var(--line);
+    }
+
+
+    .curriculo-tech-card:nth-last-child(-n+2) {
+        border-bottom: 0;
+    }
+
+
+    .curriculo-download {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .curriculo-download-actions {
+        width: 100%;
+
+        flex-direction: row;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .curriculo-actions {
+        flex-direction: column;
+    }
+
+
+    .curriculo-btn {
+        width: 100%;
+    }
+
+
+    .curriculo-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .curriculo-tech-card {
+        border-right: 0;
+    }
+
+
+    .curriculo-tech-card:nth-child(3n),
+    .curriculo-tech-card:nth-child(2n) {
+        border-right: 0;
+    }
+
+
+    .curriculo-tech-card:nth-last-child(-n+2) {
+        border-bottom:
+            1px solid
+            var(--line);
+    }
+
+
+    .curriculo-tech-card:last-child {
+        border-bottom: 0;
+    }
+
+
+    .curriculo-project {
+        grid-template-columns:
+            30px
+            1fr
+            25px;
+
+        gap: 12px;
+    }
+
+
+    .curriculo-project h3 {
+        font-size: 19px;
+    }
+
+
+    .curriculo-download {
+        padding: 30px 22px;
+    }
+
+
+    .curriculo-download-actions {
+        flex-direction: column;
+    }
+
+}
+.contact-professional-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    margin-top: 45px;
+
+    border:
+        1px solid
+        var(--line);
+}
+
+
+.contact-professional-card {
+    min-height: 290px;
+
+    padding: 32px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-right:
+        1px solid
+        var(--line);
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+.contact-professional-card:nth-child(2n) {
+    border-right: 0;
+}
+
+
+.contact-professional-card:nth-last-child(-n+2) {
+    border-bottom: 0;
+}
+
+
+.contact-professional-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -100px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(215, 255, 69, .08),
+            transparent 70%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity .3s ease;
+}
+
+
+.contact-professional-card:hover {
+    background: #0d0f12;
+
+    transform: translateY(-4px);
+}
+
+
+.contact-professional-card:hover::before {
+    opacity: 1;
+}
+
+
+.contact-professional-card > span {
+    color: #55585e;
+
+    font: 10px monospace;
+}
+
+
+.contact-professional-card small {
+    margin-top: 45px;
+
+    color: var(--accent);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+}
+
+
+.contact-professional-card h3 {
+    margin: 8px 0 12px;
+
+    font-size: 28px;
+
+    transition:
+        color .25s ease;
+}
+
+
+.contact-professional-card p {
+    max-width: 500px;
+
+    margin: 0 0 28px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+.contact-professional-card strong {
+    margin-top: auto;
+
+    color: var(--accent);
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+}
+
+
+.contact-professional-card:hover h3 {
+    color: var(--accent);
+}
+
+
+.contact-cta {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    border:
+        1px solid
+        var(--line);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(215, 255, 69, .05),
+            transparent
+        );
+}
+
+
+.contact-cta small {
+    color: var(--accent);
+
+    font: 10px monospace;
+
+    letter-spacing: .12em;
+}
+
+
+.contact-cta h2 {
+    margin: 15px 0;
+
+    font-size:
+        clamp(
+            36px,
+            5vw,
+            62px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -.04em;
+}
+
+
+.contact-cta h2 em {
+    font-family: var(--serif);
+
+    font-weight: 400;
+}
+
+
+.contact-cta p {
+    max-width: 580px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+.contact-cta-actions {
+    min-width: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.contact-cta-btn {
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        var(--line);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+
+.contact-cta-btn:hover {
+    border-color: var(--accent);
+
+    color: var(--accent);
+
+    transform: translateY(-2px);
+}
+
+
+.contact-cta-btn.primary {
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: #08090b;
+}
+
+
+.contact-cta-btn.primary:hover {
+    background: transparent;
+
+    color: var(--accent);
+}
+
+
+@media (max-width: 850px) {
+
+    .contact-professional-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-professional-card {
+        border-right: 0;
+
+        border-bottom:
+            1px solid
+            var(--line);
+    }
+
+
+    .contact-professional-card:nth-last-child(-n+2) {
+        border-bottom:
+            1px solid
+            var(--line);
+    }
+
+
+    .contact-professional-card:last-child {
+        border-bottom: 0;
+    }
+
+
+    .contact-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .contact-cta-actions {
+        width: 100%;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+
+    .contact-cta-btn {
+        flex: 1;
+
+        min-width: 180px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-professional-card {
+        min-height: 250px;
+
+        padding: 25px;
+    }
+
+
+    .contact-cta {
+        padding: 30px 22px;
+    }
+
+
+    .contact-cta-actions {
+        flex-direction: column;
+    }
+
+
+    .contact-cta-btn {
+        width: 100%;
+    }
+
+}
